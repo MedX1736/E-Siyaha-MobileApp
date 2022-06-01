@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_e_siyaha/screens/mappage.dart';
 // import 'const.dart' ; 
-import './screens/splash_screen.dart';
+// import './screens/splash_screen.dart';
 
 
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
       ),
       debugShowCheckedModeBanner : false, 
-      home: const SplashScreen(title: 'E-Siyaha'),
+      home: const MapPage(),
     );
   }
 }
