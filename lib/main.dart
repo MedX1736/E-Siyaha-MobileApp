@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp> {
       ));
 
   Color colorContainer = kColorWhite;
-  double topContainer = 50;
+  double topContainer = 30;
   BorderRadius borderRadius = BorderRadius.circular(30);
 
   EdgeInsets edgeInsetMargin =
@@ -78,6 +78,7 @@ class _MyAppState extends State<MyApp> {
                             onTap: () => {
                               setState(() {
                                 widgetText = Container(
+                                  
                                   child: Text("Alger",style: 
                                   TextStyle(fontFamily: 'Lexend',fontWeight: FontWeight.bold,fontSize: 16)
                                   )
@@ -85,7 +86,7 @@ class _MyAppState extends State<MyApp> {
                                 borderRadius = BorderRadius.only(
                                     bottomLeft: Radius.circular(20),
                                     bottomRight: Radius.circular(20));
-                                topContainer = 0;
+                                topContainer = 10;
                                 colorContainer = kColorLavender;
                                 edgeInsetMargin = EdgeInsets.zero;
                               }),
@@ -104,27 +105,28 @@ class _MyAppState extends State<MyApp> {
                         ]),
                   )),
               //Cards
-              // Positioned(
-              //   top: 500,
-              //   child: Center(
-              //     child: Container(
-              //       color: Colors.red,
-              //       width: double.infinity,
-              //       height: 250.0,
-              //       child: ListView.builder(
-              //         itemCount: circuitList.length,
-              //         scrollDirection: Axis.horizontal,
-              //         shrinkWrap: true,
-              //         physics: ScrollPhysics(),
-              //         itemBuilder: (context, index) {
-              //           var circuit = circuitList[index];
-              //           return InkWell(
-              //               onTap: () {}, child: CircuitCard(circuit: circuit));
-              //         },
-              //       ),
-              //     ),
-              //   ),
-              // ),
+              Padding(
+                padding: EdgeInsets.only(bottom: 50,left: 50),
+                child: Align(
+                  alignment: Alignment.bottomCenter,
+                  child: Container(
+                    
+                    width: double.infinity,
+                    height: 250.0,
+                    child: ListView.builder(
+                      itemCount: circuitList.length,
+                      scrollDirection: Axis.horizontal,
+                      shrinkWrap: true,
+                      physics: ScrollPhysics(),
+                      itemBuilder: (context, index) {
+                        var circuit = circuitList[index];
+                        return InkWell(
+                            onTap: () {}, child: CircuitCard(circuit: circuit));
+                      },
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),

@@ -22,8 +22,7 @@ dev_dependencies:
 
 flutter:
   assets: 
-    - assets/SVGS/user.svg
-    - assets/SVGS/menu.svg
+    - assets/SVGS/
   
   uses-material-design: true
   
