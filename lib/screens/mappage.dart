@@ -48,9 +48,9 @@ class _MapPageState extends State<MapPage> {
   @override
   Widget build(BuildContext context) {
     CameraPosition initialCameraPosition = CameraPosition(
-      zoom : CAMERA_ZOOM ,
-      tilt: CAMERA_TILT, 
-      bearing: CAMERA_BEALING,
+      zoom : kCAMERA_ZOOM ,
+      tilt: kCAMERA_TILT, 
+      bearing: kCAMERA_BEALING,
       target: kSourceLocation
     );
     return Scaffold(

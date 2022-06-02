@@ -8,9 +8,9 @@ const kColorLilac = Color(0xFFD0B2E8)  ;
 const kColorGrey = Color(0xFF3A3A3A) ; 
 
 //GoogleMapNeeds 
-const double CAMERA_ZOOM = 16 ; 
-const double CAMERA_TILT =  0; 
-const double CAMERA_BEALING = 0 ; 
+const double kCAMERA_ZOOM = 16 ; 
+const double kCAMERA_TILT =  0; 
+const double kCAMERA_BEALING = 0 ; 
 
 
 const kMapStyle = '''

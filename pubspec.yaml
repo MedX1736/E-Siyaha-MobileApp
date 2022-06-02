@@ -12,6 +12,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
+  flutter_svg: ^1.1.0
   google_maps_flutter: ^2.1.6
 
 dev_dependencies:
@@ -20,18 +21,23 @@ dev_dependencies:
     sdk: flutter
 
 flutter:
+  assets: 
+    - assets/SVGS/user.svg
+    - assets/SVGS/menu.svg
+  
   uses-material-design: true
-
+  
+  
   fonts:
     - family: Lexend
       fonts:
-        - asset: fonts\Lexend\Lexend-Thin.ttf
-        - asset: fonts\Lexend\Lexend-Regular.ttf
-        - asset: fonts\Lexend\Lexend-Bold.ttf
-        - asset: fonts\Lexend\Lexend-Black.ttf
+        - asset: fonts/Lexend/Lexend-Thin.ttf
+        - asset: fonts/Lexend/Lexend-Regular.ttf
+        - asset: fonts/Lexend/Lexend-Bold.ttf
+        - asset: fonts/Lexend/Lexend-Black.ttf
     - family: Roxborough
       fonts:
-        - asset: fonts\Roxborough\RoxboroughCF-Bold.otf
-        - asset: fonts\Roxborough\RoxboroughCF-DemiBold.otf
-        - asset: fonts\Roxborough\RoxboroughCF-Heavy.otf
-        - asset: fonts\Roxborough\RoxboroughCF-Medium.otf
+        - asset: fonts/Roxborough/RoxboroughCF-Bold.otf
+        - asset: fonts/Roxborough/RoxboroughCF-DemiBold.otf
+        - asset: fonts/Roxborough/RoxboroughCF-Heavy.otf
+        - asset: fonts/Roxborough/RoxboroughCF-Medium.otf

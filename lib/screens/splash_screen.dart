@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_e_siyaha/const.dart';
 
 class SplashScreen extends StatefulWidget {
+  static String routename = "/splash";
   const SplashScreen({Key? key, required this.title}) : super(key: key);
 
 
