@@ -1,28 +1,40 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_e_siyaha/const.dart';
 
-class SplashScreen extends StatefulWidget {
+class SplashScreen extends StatelessWidget {
+  const SplashScreen({Key? key}) : super(key: key);
   static String routename = "/splash";
-  const SplashScreen({Key? key, required this.title}) : super(key: key);
-
-
-  final String title;
-
-  @override
-  State<SplashScreen> createState() => _SplashScreen();
-}
-  
-class _SplashScreen extends State<SplashScreen> {
-  @override
+  @override 
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
+      backgroundColor:Color(0xffd8b4ec),
       body: Center(
-        child: Text(widget.title,
-              style:const  TextStyle(fontFamily : "Lexend",color : kColorPurple, fontSize: 40),
-              ), 
+        child:Container(
+          height: double.infinity,
+          width: double.infinity,
+          margin: EdgeInsets.all(10),
+          decoration: BoxDecoration(
+             image: DecorationImage(image:AssetImage("images/alger11.jpg"),colorFilter: ColorFilter.mode(Colors.deepPurple, BlendMode.color )),
+            shape: BoxShape.circle,
+          ),
+          child: 
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image(image:AssetImage("images/logo.png"),
+                width: 240,
+                height:240 ,
+                ),
+                SizedBox(
+                  height: 0,
+                ),
+                
+                Text("Lets discover Algeria !",style:TextStyle(
+                  fontSize: 20,
+                  color: Colors.white,
+                ),)
+              ],
+          ),
+        )
       ),
     );
   }
