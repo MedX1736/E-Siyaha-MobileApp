@@ -189,3 +189,5 @@ const kMapStyle = '''
   }
 ] 
 ''' ; 
+
+const googleMapApiKey = "AIzaSyDK_ZinIjcyDf6RXZdbhaly-b4GwFiXQ8k"; 

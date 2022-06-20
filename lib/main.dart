@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_e_siyaha/Circuit.dart';
 import 'package:flutter_e_siyaha/const.dart';
+import 'package:flutter_e_siyaha/routes.dart';
+import 'package:flutter_e_siyaha/screens/mapScreen.dart';
 import 'package:flutter_e_siyaha/screens/mappage.dart';
 import 'package:flutter_e_siyaha/screens/splash_screen.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -21,31 +23,18 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  double opacity = 1;
-  Widget widgetText = Text('Veuillez choisir le périmètre',
-      style: TextStyle(
-        color: kColorGrey,
-        fontFamily: 'Lexend',
-        fontSize: 14,
-      ));
-
-  Color colorContainer = kColorWhite;
-  double topContainer = 30;
-  BorderRadius borderRadius = BorderRadius.circular(30);
-
-  EdgeInsets edgeInsetMargin =
-      EdgeInsets.only(top: 10, bottom: 10, left: 25, right: 25);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute :SplashScreen.routename ,
+      initialRoute :MapScreen.routename ,
       title: 'E-Siyaha',
       theme: ThemeData(),
       debugShowCheckedModeBanner: false,
+      routes: routes,
     );
   }
-
+}
   
 // class TextField2 extends StatelessWidget {
 //   const TextField2({

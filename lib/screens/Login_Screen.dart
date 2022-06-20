@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -9,6 +8,7 @@ import 'package:flutter_e_siyaha/screens/mappage.dart';
 import 'package:flutter_e_siyaha/screens/splash_screen.dart';
 
 class LoginScreen extends StatefulWidget {
+  static String routename = "/login";
   const LoginScreen({Key? key}) : super(key: key);
 
   @override
@@ -155,10 +155,10 @@ class _LoginScreenState extends State<LoginScreen> {
           style: TextStyle(fontFamily: 'lexend', fontSize: 14),
         ),
         GestureDetector(
-          onTap: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => SignUpScreen()));
-          },
+          // onTap: () {
+          //   Navigator.push(context,
+          //       MaterialPageRoute(builder: (context) => SignUpScreen()));
+          // },
           child: Text(
             'Créer un compte',
             style: TextStyle(
