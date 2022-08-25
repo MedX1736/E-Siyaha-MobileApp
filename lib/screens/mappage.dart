@@ -2,9 +2,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_e_siyaha/const.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:flutter_e_siyaha/directions.dart';
-import 'package:flutter_e_siyaha/direction_rep.dart';
-import 'package:dio/dio.dart';
 
 const LatLng kSourceLocation = LatLng(36.745832, 3.074327);
 const LatLng kDestinationLocation = LatLng(36.759860, 3.056881);
@@ -19,8 +16,7 @@ class MapPage extends StatefulWidget {
 class _MapPageState extends State<MapPage> {
   Completer<GoogleMapController> _controller = Completer();
   late BitmapDescriptor sourceIcon;
-  late BitmapDescriptor destinationIcon;
-  late Directions _info ; 
+  late BitmapDescriptor destinationIcon; 
   late Marker _origin = Marker(
           markerId: const MarkerId('origin'),
           infoWindow: const InfoWindow(title: 'Origin'),
@@ -121,9 +117,7 @@ class _MapPageState extends State<MapPage> {
           position: pos,
         );
       });
-      final directions = await DirectionsRepository(dio: Dio())
-          .getDirections(origin: _origin.position, destination: pos);
-      setState(() => _info = directions);
+      
     }
   }
 }

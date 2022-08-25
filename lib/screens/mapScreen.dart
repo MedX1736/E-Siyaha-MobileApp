@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_e_siyaha/CircuitCard.dart';
+import 'package:flutter_e_siyaha/components/CircuitCard.dart';
 import 'package:flutter_e_siyaha/const.dart';
 import 'package:flutter_e_siyaha/screens/Login_Screen.dart';
 import 'package:flutter_svg/svg.dart';
 import 'mappage.dart';
-import 'package:flutter_e_siyaha/Circuit.dart';
-import 'package:flutter_e_siyaha/CircuitCard.dart';
+import 'package:flutter_e_siyaha/components/Circuit.dart';
+import 'package:flutter_e_siyaha/components/CircuitCard.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter_google_places_hoc081098/flutter_google_places_hoc081098.dart';
 import 'package:google_api_headers/google_api_headers.dart';

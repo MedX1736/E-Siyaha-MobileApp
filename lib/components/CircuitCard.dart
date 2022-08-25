@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'const.dart';
+import '../const.dart';
 import 'Circuit.dart';
 
 class CircuitCard extends StatelessWidget {

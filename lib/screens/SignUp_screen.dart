@@ -5,7 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_e_siyaha/user_model.dart';
+import 'package:flutter_e_siyaha/components/user_model.dart';
 import 'package:flutter_e_siyaha/screens/mappage.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
